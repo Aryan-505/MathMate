@@ -1,3 +1,3 @@
 # MathMate
 
-Visit [MathMate](https://mathmate.soufrabi.com)
+Visit [MathMate](https://mathmate-sigma.vercel.app/)
