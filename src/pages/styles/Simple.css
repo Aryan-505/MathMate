@@ -1,0 +1,177 @@
+/* styles/Simple.css */
+
+.cool-style {
+  background-image: url("https://wallpapercave.com/wp/wp2912718.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.cool-style-disabled {
+  /* pointer-events: none; */
+  background-image: none;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.cool-style .font-style {
+  color: #ef1957;
+  font-size: 4em;
+  font-family: 'Press Start 2P', cursive; 
+}
+
+.cool-style .correct-answer-flash {
+  animation: correct-answer-flash 1s infinite; /* Apply the correct answer flash animation infinitely */
+}
+
+.cool-style .correct-answer-highlight {
+  background-color: #00f900; /* Bright green */
+  color: #ffffff; /* White */
+  transition: background-color 0.2s ease-in-out;
+}
+
+.cool-style .wrong-answer-shake {
+  animation: wrong-answer-shake 0.5s ease-in-out; /* Apply the wrong answer shake animation */
+}
+
+.cool-style h2 {
+  position: relative;
+  top: 2px;
+  color: #090909; /* White */
+  font-family: 'Press Start 2P', cursive; 
+
+}
+.settings4{
+  position: relative;
+  left: 500px;
+  top: 50px;
+}
+.apple-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+  justify-content: center;
+  gap: 20px; /* Spacing between apples */
+  position: relative;
+  top: -80px;
+}
+
+/* Apple Styles */
+.apple {
+  width: 50px; /* Adjust the width of the apple */
+  height: 50px; /* Maintain aspect ratio */
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5)); /* Add a drop shadow */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.apple:hover {
+  transform: scale(1.1); /* Enlarge the apple on hover */
+}
+
+.apple::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(rgba(255, 255, 255, 0.8), transparent); /* Add a radial gradient overlay */
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Smooth transition for the overlay */
+}
+
+.apple:hover::after {
+  opacity: 1; /* Show the overlay on hover */
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+}
+
+
+
+.cool-style #simple_addition h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  position: relative;
+  top: -118px;
+  color: #ffffff; /* White */
+}
+/* styles/Simple.css */
+
+.cool-container-button {
+  display: inline-flex;
+  height: 16vh;
+  width: 16vw;
+  margin: 2vh;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #c8a864, #8c735b); /* Gradient button background - earthy tones */
+  color: #fff;
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  font-family: 'Press Start 2P', cursive; 
+  position: relative;
+  /* border: 2px dashed #fff; Dashed border */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+.cool-container-button:hover {
+  /* background: linear-gradient(135deg, #ad8c56, #7a614e); Darker gradient on hover - darker earthy tones */
+  transform: scale(1.1);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Slight increase in box shadow on hover */
+}
+
+.cool-container-button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(255, 255, 255, 0.2); Semi-transparent overlay */
+  transform: scale(0);
+  transform-origin: center;
+  transition: transform 0.5s ease;
+  border-radius: 50%;
+}
+
+.cool-container-button:hover::before {
+  transform: scale(2); /* Pulsating effect on hover */
+}
+.score1{
+  position: relative;
+  left: -600px;
+  top: 10px;
+}
+.type{
+  font-size: 50px;
+}
+.cool-container-button.incorrect {
+  background: linear-gradient(135deg, #ff5c5c, #ff7a7a); /* Red gradient for incorrect answer */
+  transform: scale(1); /* Reset scale on incorrect answer */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Keep the box shadow on incorrect answer */
+}
+
+.cool-container-button.incorrect::before {
+  transform: scale(0); /* Reset pulsating effect on incorrect answer */
+}
+#text1{
+  position: relative;
+  top: -94px;
+}
+#text2{
+  position: relative;
+  top: -90px;
+}
+#text3{
+  position: relative;
+  top: -60px;
+}
+.plus-sign{
+  position: relative;
+  font-family:  'Press Start 2P', cursive;
+  font-size: 60px;
+  top: 20px;
+}
