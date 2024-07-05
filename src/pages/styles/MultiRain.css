@@ -1,0 +1,139 @@
+.MultiRain {
+  text-align: center;
+  padding: 20px;
+  /* width: 1000px; */
+}
+.settings1{
+  position: relative;
+  left: -500px;
+  top: -50px;
+}
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr) 1fr; /* Add an extra column for numbering */
+  grid-template-rows: repeat(10, 1fr);
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight:900;
+  height: 470px; /* Adjust the height as needed to accommodate the entire grid */
+  overflow: hidden;
+  border: 2px solid #000;
+  position: relative;
+  width: 1200px;
+  background-color: rgb(244, 232, 128);
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+}
+.cell{
+  width: 110px;
+  /* background-color: pink; */
+}
+.row-index{
+  font-size: 30px;
+}
+.cell {
+  /* border-bottom: 1px solid #000; Add border for row lines only */
+  position: relative;
+}
+
+.row-number {
+  position: absolute;
+  right: 0;
+  transform: translateY(-50%); /* Center the row numbers vertically */
+  
+}
+
+.equation {
+  position: absolute;
+  animation: fall 10s linear infinite;
+}
+
+.score {
+  position: relative;
+  /* left: 700px; */
+  margin-top: 10px;
+  font-size: 20px;
+  /* top: -200px; */
+}
+
+input {
+  margin-top: 10px;
+  padding: 5px;
+}
+.last-column {
+  /* border-right: 2px solid #000; Add a border to the right for the last column */
+  border-right: 10px solid #3498db; /* Set border color */
+  /* border-radius: 15px; Add rounded corners */
+  /* padding: 10px; Add some padding inside the border */
+  /* box-shadow: 0 0 10px rgba(52, 152, 219, 0.5); Add a subtle box shadow */
+  /* background-color: #ecf0f1; Set background color */
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-50%);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateY(1350%); /* Adjust the percentage to ensure the numbers reach the bottom */
+    visibility: hidden;
+  }
+}
+input[type="number"] {
+  position: relative;
+  top: -14px;
+  font-size: 1.2em;
+  padding: 8px;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+  text-align: center;
+}
+
+/* Styling for focus state of the input */
+input[type="number"]:focus {
+  border-color: #e74c3c;
+}
+
+/* Add some additional styling to make it visually appealing */
+.input-container {
+  position: relative;
+  top: -2px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Add some color and fun to the score display */
+.score {
+  font-size: 1.5em;
+  color:black;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  /* background-color: yellow; */
+  /* width: 50px; */
+}
+h1 {
+  color: #3498db; /* Set header color */
+  text-align: center; /* Center the header text */
+}
+.game-container {
+  border: 10px solid #3498db; /* Set border color */
+  border-radius: 15px; /* Add rounded corners */
+  padding: 10px; /* Add some padding inside the border */
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5); /* Add a subtle box shadow */
+  /* background-color: #ecf0f1; */
+  /* opacity: 0.7; */
+}
+.equation {
+  font-size: 1.2em; /* Set the font size */
+  font-weight: bold; /* Add boldness to the font */
+  color: #00060b; /* Set a dark font color for better visibility on light background */
+  text-shadow: 1px 1px 2px rgba(44, 62, 80, 0.5); /* Add a subtle text shadow for emphasis */
+}
+.row-index{
+  font-size: 1 em; /* Set the font size */
+  font-weight: bold; /* Add boldness to the font */
+  color: #00060b; /* Set a dark font color for better visibility on light background */
+  text-shadow: 1px 1px 2px rgba(44, 62, 80, 0.5); /* Add a subtle text shadow for emphasis */
+}

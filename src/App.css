@@ -1,0 +1,145 @@
+
+body {
+  font-family: 'Press Start 2P', cursive; 
+  margin: 0;
+  padding: 0;
+  background-image: url('https://wallpaperaccess.com/full/669246.jpg'); 
+  background-size: cover;
+  
+}
+
+.App-header {
+  background: linear-gradient(135deg, #4f9fff, #73a5ff); 
+   padding: 20px;
+  color: #1a0202;
+  /* animation: bounce 1s infinite; */
+  font-family: 'Press Start 2P', cursive; 
+  /* opacity: 0.1; */
+  opacity: 0.7; /* Set the opacity of the header background */
+}
+.App-header h1, .App-header p {
+  opacity: 1; /* Keep text content fully opaque */
+  color: black;
+  font-size:50px ;
+}
+
+.App-footer {
+  /* background: linear-gradient(135deg,lime, #73a5ff); */
+  /* padding: 10px; */
+  color: #121212;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Press Start 2P', cursive; /* Apply Press Start 2P font */
+  /* opacity: 0.2; */
+  font-size: larger;
+  font-weight: bolder;
+  height: 70px;
+}
+
+.footer-content {
+  /* display: flex; */
+  /* flex-direction: row; */
+  align-items: center;
+}
+.footer-content p{
+  position: relative;
+  left: 555px;
+  top: -60px;
+}
+.footer-btn {
+  background: linear-gradient(135deg, #fddb92, #f68a5c); /* Gradient button background - warm orange */
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 15px;
+  font-size: 1.2em;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.footer-btn:hover {
+  background: linear-gradient(135deg, #f9cba1, #f67f5e); /* Darker gradient on hover - darker orange */
+}
+
+.footer-btn:active {
+  transform: translateY(2px);
+}
+
+.container a {
+  display: inline-flex;
+  height: 17vh;
+  width: 17vw;
+  margin: 2vh;
+  font-size: 2em;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #c8a864, #8c735b); 
+  color: #fff;
+  border-radius: 20px; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; 
+  font-family: 'Press Start 2P', cursive; 
+  left: 60px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden; 
+}
+
+.container a:hover {
+  background: linear-gradient(135deg, #ad8c56, #7a614e); 
+  transform: scale(1.1) rotate(10deg); 
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); 
+  border-color: #ad8c56; 
+}
+
+.container a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(143, 176, 241, 0.2); /* Semi-transparent overlay */
+  transform: scale(0);
+  transform-origin: center;
+  transition: transform 0.5s ease;
+  border-radius: 50%;
+}
+
+.container a:hover::before {
+  transform: scale(2); /* Pulsating effect on hover */
+}
+/* Add this style for the back button */
+.App-footer a {
+  display: inline-flex;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(135deg, #4f9fff, #73a5ff);
+  /* background-color: #4caf50; Gradient button background - sky blue */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  position: relative;
+  left: 40px;
+  top: -30px;
+  color: white;
+}
+.footer-text{
+  position:relative;
+  /* left: 150px; */
+}
+
+.App-footer a:hover {
+  background: linear-gradient(135deg, #3775c9, #4f9fff); /* Darker gradient on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slight increase in box shadow on hover */
+  transform: translateY(-2px); /* Move the button up slightly on hover */
+}
+
+.switch{
+  position: relative;
+  left: 900px;
+  top: -10px;
+}

@@ -1,0 +1,54 @@
+.Addition .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Addition .container button{
+    width: 35vw;
+    height: 40vh;
+    margin: 10vw;
+    font-size: 40px;
+}
+.head{
+    position: relative;
+    top: 10px;
+}
+.header{
+    background: linear-gradient(135deg, #4f9fff, #73a5ff); 
+    padding: 20px;
+   color: #1a0202;
+   /* animation: bounce 1s infinite; */
+   font-family: 'Press Start 2P', cursive;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   opacity: 0.7;
+}
+.header h1{
+    color: black;
+    font-size: 50px;
+}
+.container .button {
+    display: inline-flex;
+    height: 17vh;
+    width: 17vw;
+    margin: 2vh;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #c8a864, #8c735b); 
+    color: #fff;
+    border-radius: 20px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; 
+    font-family: 'Press Start 2P', cursive; 
+    position: relative;
+    top: -100px;
+  }
+  
+  .container .button:hover {
+    background: linear-gradient(135deg, #ad8c56, #7a614e); 
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }

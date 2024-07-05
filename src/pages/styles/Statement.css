@@ -1,0 +1,163 @@
+.container-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  position: relative; /* Added position relative */
+}
+
+/* .background-changed {
+  background-image: url("https://webstockreview.net/images/morning-clipart-sunny-landscape-4.jpg");
+  background-size: cover;
+  background-position: center;
+} */
+
+.cool-style {
+  background-image: url("https://wallpapercave.com/wp/wp2912718.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.cool-style.disabled {
+  pointer-events: none;
+  background-image: none;
+}
+
+.statement-box {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  padding: 30px;
+  border-radius: 30px;
+  /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); */
+  /* margin-bottom: 60px; */
+  animation: bounce 5s infinite alternate, rotate 4s infinite linear; /* Adding bouncing and rotating animations */
+  font-size: 50px; /* Increased font size */
+  color: black;
+  height: 45vh;
+}
+
+.heading{
+  font-size: 70px;
+  text-decoration: underline;
+  color: #a1ae11;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+
+.user-answer-input {
+  padding: 20px;
+  border-radius: 40px;
+  border: 3px solid  #45a049;
+  margin-bottom: 40px;
+  font-size: 40px; /* Increased font size */
+  transition: border-color 0.3s ease-in-out;
+  width: 400px; /* Adjust width as needed */
+  background-color:rgb(224, 224, 120); /* Added background color */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Added box shadow */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.settings3{
+  position: relative;
+  /* top: -100px; */
+  left: -500px;
+}
+.user-answer-input:focus {
+  outline: none;
+  border-color: #ff6f61;
+}
+
+.submit-buttons {
+  background-color: #ff6f61;
+  color: #fff;
+  padding: 20px 40px; /* Increased padding */
+  border: none;
+  border-radius: 40px;
+  font-size: 28px; /* Increased font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+.submit-buttons:hover {
+  background-color: #ff524f;
+  transform: scale(1.1); /* Added scaling effect on hover */
+}
+.start-buttons {
+  background-color: #45a049;
+  color:white;
+  padding: 20px 40px; /* Increased padding */
+  border: none;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 40px; /* Increased font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Added box shadow */
+  position: relative;
+  top: -50px;
+}
+.start-buttons:hover {
+  background-color: #1bce74;
+  transform: scale(1.1); /* Added scaling effect on hover */
+}
+.font-size-controls {
+  display: flex;
+}
+
+.font-size-button {
+  /* background-color: #4CAF50; Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  /* width: 40px; */
+  /* height: 40px; */
+  position: relative;
+  left: 500px;
+  top: 30px;
+}
+
+.font-size-button:hover {
+  background-color: #45a049;
+}
+
+.feedback-message {
+  font-size: 32px; /* Increased font size */
+  font-weight: bold;
+  color: #ff6f61;
+  margin-top: 40px;
+  animation: pulse 1s infinite; /* Added pulsating animation */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

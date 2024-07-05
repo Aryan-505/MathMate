@@ -1,0 +1,12 @@
+.Addition .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Addition .container button{
+    width: 35vw;
+    height: 40vh;
+    margin: 10vw;
+    font-size: 40px;
+}
