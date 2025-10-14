@@ -76,7 +76,7 @@ function MultiRain({ isBackgroundColorChanged }) {
       equation: `${num1} X ${num2}`,
       answer,
       column: Math.floor(Math.random() * 10),
-      row: fixedRow, // Fixed row to always start from the top
+      row: fixedRow, 
       startTime: Date.now(),
     };
   };
