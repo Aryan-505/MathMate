@@ -1,3 +1,4 @@
 # MathMate
 
-Visit [MathMate](https://mathmate-sigma.vercel.app/)
+Visit [MathMate](https://mathmate.onrender.com)
+
